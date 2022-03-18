@@ -161,22 +161,14 @@ main{
 }
 .basic_title_left-column{
     position: relative;
-    width: 60%;
+    width: 100%;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     border-radius: 10px;
     padding: 5px 0;
     margin-top: 10px;
 }
-.basic_title_left-column::after{
-    content: "";
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 100%;
-    border: 1px solid black;
-    width: 65%;
-}
+
 .basic_subtitle{
     font-weight: 400;
     font-size: 16px;
@@ -254,3 +246,21 @@ main{
 }
 /*second column styles end*/
 
+@media (max-width: 960px) {
+    .container_main_first-string{
+        flex-direction: column;
+    }
+    .container_about-me{
+        width: auto;
+    }
+    .container_first-column{
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .container_intro{
+        display: block;
+    }
+    .projects_string{
+        display: block;
+    }
+}
