@@ -73,6 +73,9 @@ main{
     margin-bottom: 5px;
     align-items: center;
 }
+.intro_box a{
+    font-size: 20px;
+}
 .intro_title{
     text-align: center;
     margin: 0;
@@ -84,8 +87,8 @@ main{
 .intro_line{
     content: "";
     border: 1px solid gray;
-    width: 100%;
-    margin: 10px 0;
+    width: 90%;
+    margin: 10px auto;
 }
 .intro-info{
     display: flex;
@@ -143,7 +146,7 @@ main{
 }
 .basic_title{
     position: relative;
-    width: 40%;
+    width: 50%;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     border-radius: 10px;
@@ -157,7 +160,7 @@ main{
     top: 50%;
     left: 100%;
     border: 1px solid black;
-    width: 150%;
+    width: 100%;
 }
 .basic_title_left-column{
     position: relative;
@@ -246,7 +249,10 @@ main{
 }
 /*second column styles end*/
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
+    .menu_list{
+        display: none;
+    }
     .container_main_first-string{
         flex-direction: column;
     }
