@@ -18,16 +18,16 @@
                 <nav class="header_nav">
                     <ul class="menu_list">
                         <li class="menu_list-items">
-                            <a href="#" class="menu_list-item">Обо мне</a>
+                            <a href="#about-me" class="menu_list-item">Обо мне</a>
                         </li>
                         <li class="menu_list-items">
-                            <a href="#" class="menu_list-item">Образование</a>
+                            <a href="#education" class="menu_list-item">Образование</a>
                         </li>
                         <li class="menu_list-items">
-                            <a href="#" class="menu_list-item">Навыки</a>
+                            <a href="#skills" class="menu_list-item">Навыки</a>
                         </li>
                         <li class="menu_list-items">
-                            <a href="#" class="menu_list-item">Проекты</a>
+                            <a href="#projects" class="menu_list-item">Проекты</a>
                         </li>
                     </ul>
                 </nav>
@@ -54,12 +54,22 @@
                         <h2 class="intro_subtitle">Frontend developer</h2>
                     </div>
                         <div class="intro-info">
-                            <div class="intro_info-item intro_box"><a href="https://t.me/gusap9" class="intro-link">
-                                <img src="assets/img/gifs/telegram-app.gif" alt="telegram" class="intro_links">&nbsp;@gusap9
-                            </a></div>
-                            <div class="intro_info-item intro_box"><a href="tel:+79313132327" class="intro-link">
-                                <img src="assets/img/gifs/phone.gif" alt="phone" class="intro_links">&nbsp;89313132327
-                            </a></div>
+                            <div class="intro_info-item intro_box telega-git-space">
+                                <a href="https://t.me/gusap9" class="intro-link">
+                                    <img src="assets/img/gifs/telegram-app.gif" alt="telegram" class="intro_links">
+                                    <div>&nbsp;@gusap9</div>
+                                </a>
+                                <a href="https://github.com/gusap9" class="intro-link" style="margin-left: 5px">
+                                    <img src="assets/img/gifs/github.gif" alt="github" class="intro_links">
+                                    <div>&nbsp;@gusap9</div>
+                                </a>
+                            </div>
+                            <div class="intro_info-item intro_box">
+                                <a href="tel:+79313132327" class="intro-link" >
+                                    <img src="assets/img/gifs/phone.gif" alt="phone" class="intro_links">
+                                    <div> &nbsp;89313132327</div>
+                                </a>
+                            </div>
                             <div class="intro_info-item intro_box"><a href="mailto:nikitaasauleak@gmail.com" class="intro-link">
                                 <img src="assets/img/gifs/gmail.gif" alt="gmail" class="intro_links">&nbsp;nikitaasauleak@gmail.com
                             </a></div>
@@ -76,7 +86,7 @@
 <!--First column start-->
                 <div class="container_main_first-string">
                     <div class="container_first-column">
-                        <div class="container_education">
+                        <div id="education" class="container_education">
                             <h2 class="basic_title_left-column">Образование</h2>
                             <p class="education_subtitle-year">2017-2021</p>
                             <p class="basic_subtitle">
@@ -116,7 +126,7 @@
 
 <!--Second column start-->
                     <div class="container_second-column container_about-me">
-                        <h2 class="basic_title">Обо мне</h2>
+                        <h2 id="about-me" class="basic_title">Обо мне</h2>
                         <p class="basic_subtitle about-me_subtitle">
                             Проживаю в Санкт-Петербурге. Параллельно с основной работой и учёбой последние 1.5 года изучал вёрстку.
                             Хорошо разбираюсь в синтаксисе JS, HTML и CSS. Умею работать с Git.
@@ -124,7 +134,7 @@
                             Теоретически затрагивал в изучении фреймворк React.
                             <br> Из хобби могу выделить футбол и большой теннис. Также люблю велопрогулки, природу и компьютерные игры.
                         </p>
-                        <div class="container_skills">
+                        <div id="skills" class="container_skills">
                             <h2 class="basic_title">Навыки</h2>
                             <p class="education_subtitle-year">
                                 Знания языков
@@ -146,7 +156,7 @@
                                 <span class="skills_work-skills">усидчивый</span>, <span class="skills_work-skills">умею работать в команде</span>,
                                 <span class="skills_work-skills">умею работать с логикой</span>, <span class="skills_work-skills">быстро схватываю ифнормацию</span>
                             </p>
-                            <div class="container_projects">
+                            <div id="projects" class="container_projects">
                                 <div class="basic_title-box">
                                     <h2 class="basic_title">Проекты</h2>
                                 </div>
@@ -172,12 +182,17 @@
                                         </div>
                                     </div>
                                     <div class="projects_links">
-                                        <h2 class="basic_title">Примеры работы с JavaScript</h2>
+                                        <h2 class="basic_title">Работа с JavaScript</h2>
                                         <div class="projects_links-box">
-                                            <div class="intro_info-item intro_box"><a href="https://github.com/gusap9" class="intro-link">
-                                                <img src="assets/img/gifs/github.gif" alt="github" class="intro_links">
+                                            <div class="projects_links-item intro_box"><a href="https://github.com/gusap9/human-readable-number" class="projects-link">
+                                                <img src="assets/img/gifs/github.gif" alt="github" class="intro_links project_git-ico">"Human readable number"
                                             </a></div>
-                                            <div class="intro_info-item intro_box"><a href="https://www.codewars.com/users/gusap9" class="intro-link">
+                                            <div class="projects_links-item intro_box"><a href="https://github.com/gusap9/brackets" class="projects-link">
+                                                <img src="assets/img/gifs/github.gif" alt="github" class="intro_links project_git-ico">"Brackets"
+                                            </a></div>
+                                            <div class="projects_links-item intro_box"><a href="https://github.com/gusap9/reverse-int" class="projects-link">
+                                                <img src="assets/img/gifs/github.gif" alt="github" class="intro_links project_git-ico">"Reverse-int"</a></div>
+                                            <div class="projects_links-item intro_box"><a href="https://www.codewars.com/users/gusap9">
                                                 <img src="assets/img/codewars.png" alt="codewars" class="intro_links">
                                             </a></div>
                                         </div>

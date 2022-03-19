@@ -39,6 +39,12 @@ main{
 .menu_list-item{
     text-decoration: none;
     color: black;
+    padding: 5px;
+}
+.menu_list-item:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: .5s;
 }
 /*header styles end*/
 
@@ -94,8 +100,6 @@ main{
     display: flex;
     flex-direction: column;
     align-self: center;
-}
-.intro-info{
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     border-radius: 10px;
     padding: 5px 0 0 5px;
@@ -117,6 +121,14 @@ main{
     display: flex;
     flex-direction: column;
     width: 26%;
+}
+.intro_info-item{
+    display: flex;
+    font-size: 20px;
+}
+.telega-git-space{
+    display: flex;
+    justify-content: space-between;
 }
 /*intro styles end*/
 
@@ -171,7 +183,10 @@ main{
     padding: 5px 0;
     margin-top: 10px;
 }
-
+.basic_title:hover, .basic_title_left-column:hover{
+    letter-spacing: 5px;
+    transition: .5s;
+}
 .basic_subtitle{
     font-weight: 400;
     font-size: 16px;
@@ -237,10 +252,30 @@ main{
     border-radius: 10px;
     border: 2px solid black;
 }
+.projects-link{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    color: black;
+    font-style: italic;
+    font-weight: 400;
+    padding-right: 5px;
+}
+
 .projects_links{
     display: flex;
     flex-direction: column;
-
+}
+.projects_links-item{
+    margin-right: 15px;
+}
+.projects_links-item:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+.project_git-ico{
+    margin-right: 10px;
 }
 .projects_links-box{
     display: flex;
@@ -268,5 +303,14 @@ main{
     }
     .projects_string{
         display: block;
+    }
+    .projects_links-box{
+        display: block;
+    }
+    .projects_links-item{
+        margin-right: 0;
+    }
+    .projects-link{
+        padding-right: 0;
     }
 }
